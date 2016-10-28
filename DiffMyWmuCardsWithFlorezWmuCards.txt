@@ -1,0 +1,460 @@
+diff -r CorrecteCardsFlorez/Cuts.in VBF_DM_13TeV_WmuCR/Cuts.in
+1,7c1,7
+< NGenTau         0  -1
+< NGenTop         0  -1
+< NGenElectron    0  -1
+< NGenMuon        0  -1
+< NGenZ           0  -1
+< NGenW           0  -1
+< NGenHiggs       0  -1
+---
+> NGenTau		0  -1
+> NGenTop		0  -1
+> NGenElectron 	0  -1
+> NGenMuon	0  -1
+> NGenZ		0  -1
+> NGenW		0  -1
+> NGenHiggs	0  -1
+10,14c10,21
+< 
+< ***NRecoTriggers1     1   -1           ///only 0 or 1
+< ***NRecoJet1          1   -1
+< ***NRecoJet2          2   -1
+< NRecoCentralJet       0   -1
+---
+> ***NRecoMuon1	      1   -1
+> ***NRecoMuon2	      0   -1
+> NRecoElectron1	      0   -1
+> NRecoElectron2	      0   -1
+> NRecoTau1	      0   -1
+> NRecoTau2	      0   -1
+> ***NRecoJet1	      1   -1
+> ***NRecoJet2	      2   -1
+> NRecoCentralJet	      0   -1
+> ***NRecoBJet	      0   0
+> ***NRecoTriggers1	      1   -1           ///only 0 or 1
+> ***NRecoTriggers2	      1   -1           ///only 0 or 1
+17,24d23
+< ***NRecoBJet          0    0
+< 
+< ***NRecoMuon1            1    1
+< ***NRecoMuon2            0   -1
+< NRecoElectron1        0   -1
+< NRecoElectron2        0   -1
+< NRecoTau1             0   -1
+< NRecoTau2             0   -1
+27c26
+< NRecoMuon2MetTopology      0   -1
+---
+> NRecoMuon2MetTopology 	   0   -1
+30,31c29,30
+< NRecoTau1MetTopology       0   -1
+< NRecoTau2MetTopology       0   -1
+---
+> NRecoTau1MetTopology 	   0   -1
+> NRecoTau2MetTopology 	   0   -1
+33,37c32
+< NDiMuonCombinations        0   -1
+< NDiElectronCombinations    0   -1
+< NDiTauCombinations         0   -1
+< ***METCut                  1   -1
+< ***NDiJetCombinations      1   -1
+---
+> METCut			   1   -1
+39,46c34,46
+< NMuon1Tau1Combinations       0   -1
+< NMuon1Tau2Combinations       0   -1
+< NMuon2Tau1Combinations       0   -1
+< NMuon2Tau2Combinations       0   -1
+< NElectron1Tau1Combinations   0   -1
+< NElectron1Tau2Combinations   0   -1
+< NElectron2Tau1Combinations   0   -1
+< NElectron2Tau2Combinations   0   -1
+---
+> NDiMuonCombinations	   0   -1
+> NDiElectronCombinations	   0   -1
+> NDiTauCombinations	   0   -1
+> ***NDiJetCombinations	   1   -1
+> 			   
+> NMuon1Tau1Combinations        0   -1
+> NMuon1Tau2Combinations 	      0   -1
+> NMuon2Tau1Combinations 	      0   -1
+> NMuon2Tau2Combinations 	      0   -1
+> NElectron1Tau1Combinations    0   -1
+> NElectron1Tau2Combinations    0   -1
+> NElectron2Tau1Combinations    0   -1
+> NElectron2Tau2Combinations    0   -1
+52,53c52
+< NSusyCombinations          0   -1   ///only 0 or 1
+< ***NRecoTriggers2          1   -1           ///only 0 or 1
+---
+> ***NSusyCombinations       1   -1   ///only 0 or 1
+Only in VBF_DM_13TeV_WmuCR/: Cuts.in~
+diff -r CorrecteCardsFlorez/DiParticle_info.in VBF_DM_13TeV_WmuCR/DiParticle_info.in
+12c12
+< DiscrByCosDphi_DeltaPtAndMet   false
+---
+> DiscrByCosDphi_DeltaPtAndMet   true
+36c36
+< DiscrByDeltaR  true
+---
+> DiscrByDeltaR  1
+39,40c39,40
+< DiscrByOSLSType  None
+< DiscrByCosDphi	 false
+---
+> DiscrByOSLSType  NONE
+> DiscrByCosDphi	 0
+50c50
+< DiscrByCDFzeta2D          false
+---
+> DiscrByCDFzeta2D          0
+55c55
+< DiscrByDeltaPtDivSumPt     false
+---
+> DiscrByDeltaPtDivSumPt     0
+57c57
+< DiscrByDeltaPt 		   false
+---
+> DiscrByDeltaPt 		   0
+64c64
+< DiscrByDeltaR  true
+---
+> DiscrByDeltaR  1
+67c67
+< DiscrByOSLSType  None
+---
+> DiscrByOSLSType  No
+74c74
+< DiscrByMassReco  false
+---
+> DiscrByMassReco  0
+83c83
+< DiscrByDeltaPtDivSumPt     false
+---
+> DiscrByDeltaPtDivSumPt     0
+85c85
+< DiscrByDeltaPt 		   false
+---
+> DiscrByDeltaPt 		   0
+96,97c96,97
+< DiscrByDeltaEta     true
+< DeltaEtaCut         4.2  9999.0
+---
+> DiscrByDeltaEta      true
+> DeltaEtaCut         3.6  9999.0
+100c100
+< DiscrByOSEta true
+---
+> DiscrByOSEta 1
+105c105,106
+< MassCut 1000.0 9999.0
+---
+> MassCut 700.0 9999.0
+> 
+Only in VBF_DM_13TeV_WmuCR/: DiParticle_info.in~
+diff -r CorrecteCardsFlorez/ElectronTau_info.in VBF_DM_13TeV_WmuCR/ElectronTau_info.in
+5c5
+< DiscrByDeltaR  true
+---
+> DiscrByDeltaR  1
+8,9c8,9
+< DiscrByOSLSType  None
+< DiscrByCosDphi	 false
+---
+> DiscrByOSLSType  No
+> DiscrByCosDphi	 0
+15c15
+< DiscrByMassReco  false
+---
+> DiscrByMassReco  0
+19c19
+< DiscrByCDFzeta2D          false
+---
+> DiscrByCDFzeta2D          0
+24c24
+< DiscrByDeltaPtDivSumPt     false
+---
+> DiscrByDeltaPtDivSumPt     0
+26c26
+< DiscrByDeltaPt 		   false
+---
+> DiscrByDeltaPt 		   0
+33c33
+< DiscrByDeltaR  true
+---
+> DiscrByDeltaR  1
+36,37c36,37
+< DiscrByOSLSType  None
+< DiscrByCosDphi	 false
+---
+> DiscrByOSLSType  No
+> DiscrByCosDphi	 0
+43c43
+< DiscrByMassReco  false
+---
+> DiscrByMassReco  0
+47c47
+< DiscrByCDFzeta2D          false
+---
+> DiscrByCDFzeta2D          0
+52c52
+< DiscrByDeltaPtDivSumPt     false
+---
+> DiscrByDeltaPtDivSumPt     0
+54c54
+< DiscrByDeltaPt 		   false
+---
+> DiscrByDeltaPt 		   0
+61c61
+< DiscrByDeltaR  true
+---
+> DiscrByDeltaR  1
+64,65c64,65
+< DiscrByOSLSType  None
+< DiscrByCosDphi	 false
+---
+> DiscrByOSLSType  No
+> DiscrByCosDphi	 0
+71c71
+< DiscrByMassReco  false
+---
+> DiscrByMassReco  0
+75c75
+< DiscrByCDFzeta2D          false
+---
+> DiscrByCDFzeta2D          0
+80c80
+< DiscrByDeltaPtDivSumPt     false
+---
+> DiscrByDeltaPtDivSumPt     0
+82c82
+< DiscrByDeltaPt 		   false
+---
+> DiscrByDeltaPt 		   0
+89c89
+< DiscrByDeltaR              true
+---
+> DiscrByDeltaR              1
+92,93c92,93
+< DiscrByOSLSType            None
+< DiscrByCosDphi	           false
+---
+> DiscrByOSLSType            No
+> DiscrByCosDphi	           0
+99c99
+< DiscrByMassReco            false
+---
+> DiscrByMassReco            0
+103c103
+< DiscrByCDFzeta2D           false
+---
+> DiscrByCDFzeta2D           0
+108c108
+< DiscrByDeltaPtDivSumPt     false
+---
+> DiscrByDeltaPtDivSumPt     0
+110c110
+< DiscrByDeltaPt 		   false
+---
+> DiscrByDeltaPt 		   0
+diff -r CorrecteCardsFlorez/Electron_info.in VBF_DM_13TeV_WmuCR/Electron_info.in
+26,27c26,27
+< EtaCut 2.5
+< PtCut 10.0 9999.9
+---
+> EtaCut 2.1
+> PtCut 20.0 9999.9
+29,30c29,30
+< DoDiscrByIsolation 1
+< IsoSumPtCutValue 0.0 0.25
+---
+> DoDiscrByIsolation 0
+> IsoSumPtCutValue 0.0 0.4
+32c32
+< DoDiscrByVetoID 1
+---
+> DoDiscrByVetoID 0
+54,55c54,55
+< EtaCut 2.5
+< PtCut 10.0 9999.9
+---
+> EtaCut 2.1
+> PtCut 20.0 9999.9
+57,58c57,58
+< DoDiscrByIsolation 1
+< IsoSumPtCutValue 0.0 0.25
+---
+> DoDiscrByIsolation 0
+> IsoSumPtCutValue 0.0 0.2
+61c61
+< DoDiscrByLooseID 1
+---
+> DoDiscrByLooseID 0
+diff -r CorrecteCardsFlorez/Hist_entries.in VBF_DM_13TeV_WmuCR/Hist_entries.in
+42d41
+< TauJet1MetMt              100   0      500
+56d54
+< TauJet2MetMt              100   0      500
+116c114
+< FillJet2 0
+---
+> FillJet2 1
+124c122
+< FillBJet 0
+---
+> FillBJet 1
+132c130
+< FillCentralJet 0
+---
+> FillCentralJet 1
+173d170
+< 
+175d171
+< HtVsMet                       50   0    2500.  100   0    1000.
+197c193
+< FillDiMuon 0
+---
+> FillDiMuon 1
+Only in VBF_DM_13TeV_WmuCR/: Hist_entries.in~
+diff -r CorrecteCardsFlorez/Jet_info.in VBF_DM_13TeV_WmuCR/Jet_info.in
+19c19
+< PtCut 50.0
+---
+> PtCut 60.0
+35c35
+< Tau1MatchingDeltaR  0.3
+---
+> Tau1MatchingDeltaR  0.1
+43c43
+< PtCut 50.0
+---
+> PtCut 60.0
+66c66
+< PtCut 50.0
+---
+> PtCut 30.0
+93c93
+< RemoveOverlapWithMuon1s 1
+---
+> RemoveOverlapWithMuon1s 1 
+138c138
+< PtCut 30.0
+---
+> PtCut 20.0
+156c156
+< JetBTaggingCut 0.800
+---
+> JetBTaggingCut 0.460
+Only in VBF_DM_13TeV_WmuCR/: Jet_info.in~
+diff -r CorrecteCardsFlorez/Muon_info.in VBF_DM_13TeV_WmuCR/Muon_info.in
+27c27
+< PtCut 30.0 9999.9
+---
+> PtCut 25.0 9999.9
+33c33
+< IsoSumPtCutValue 0.0 0.25
+---
+> IsoSumPtCutValue 0.0 0.15
+52c52
+< PtCut 10.0 9999.9
+---
+> PtCut 25.0 9999.9
+54,55c54,55
+< DoDiscrByTightID 0
+< DoDiscrBySoftID 1
+---
+> DoDiscrByTightID 1
+> DoDiscrBySoftID 0
+58c58
+< IsoSumPtCutValue 0.0 0.25
+---
+> IsoSumPtCutValue 0.0 0.15
+diff -r CorrecteCardsFlorez/Run_info.in VBF_DM_13TeV_WmuCR/Run_info.in
+6c6
+< DataHistos PU2016data_15p9ifb.root
+---
+> DataHistos PU2016data_6p2ifb.root
+10c10
+< ApplyGenWeight false
+---
+> ApplyGenWeight  false
+27c27
+< RecoMetCut 60.0 10000.0
+---
+> RecoMetCut 30.0 10000.0
+32c32
+< HtCut 400.0
+---
+> HtCut 30.0
+34,35c34,35
+< JetPtForMhtAndHt 30.0
+< JetEtaForMhtAndHt 5.0
+---
+> JetPtForMhtAndHt 30.0        
+> JetEtaForMhtAndHt 5.0        
+36a37,38
+> 
+> 
+Only in VBF_DM_13TeV_WmuCR/: Run_info.in~
+diff -r CorrecteCardsFlorez/Tau_info.in VBF_DM_13TeV_WmuCR/Tau_info.in
+15c15
+< MatchToGen 0
+---
+> MatchToGen 1
+24c24
+< EtaCut 2.3
+---
+> EtaCut 2.5
+58,61c58,61
+<   ##  againstElectronMVAVLooseMVA6
+<   ##  againstElectronMVALooseMVA6
+<   ##  againstElectronMVAMediumMVA6
+<   ##  againstElectronMVATightMVA6
+---
+>   ##  againstElectronMVAVLooseMVA5
+>   ##  againstElectronMVALooseMVA5
+>   ##  againstElectronMVAMediumMVA5
+>   ##  againstElectronMVATightMVA5
+64c64
+< DiscrAgainstElectron againstElectronMVAVLooseMVA6
+---
+> DiscrAgainstElectron againstElectronMVALooseMVA6
+67c67
+<   #####List of Muon Discriminators#####
+---
+>   #####List of Electron Discriminators#####
+102c102
+< EtaCut 2.3
+---
+> EtaCut 2.1
+110a111
+> ///DiscrByMaxIsolation byTightIsolationMVA3newDMwLT
+113,114c114,115
+< DoDiscrAgainstElectron 1
+< DiscrAgainstElectron againstElectronMVAVLooseMVA6
+---
+> DoDiscrAgainstElectron 0
+> DiscrAgainstElectron againstElectronMVALooseMVA5
+117c118
+< DoDiscrAgainstMuon 1
+---
+> DoDiscrAgainstMuon 0
+diff -r CorrecteCardsFlorez/VBFCuts_info.in VBF_DM_13TeV_WmuCR/VBFCuts_info.in
+5c5
+< DiscrByMass false
+---
+> DiscrByMass true
+9,10c9,10
+< PtCut 0 10000.0
+< DiscrByDeltaEta false
+---
+> PtCut 60. 10000.0
+> DiscrByDeltaEta true
+15c15
+< DiscrByOSEta 0
+---
+> DiscrByOSEta 1
+27a28,29
+> 
+> 
